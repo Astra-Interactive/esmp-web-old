@@ -1,0 +1,16 @@
+.grid { 
+  margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    }
+  .grid img {
+    border: 1px solid #3f3f3f;
+    transition: all 0.3s ease 0s;
+    box-shadow: 2px 2px 6px 5px  rgba(0,0,0,1.0);
+    max-width: 100%;
+  }
+  img:hover{
+    scale:1.05;
+  }

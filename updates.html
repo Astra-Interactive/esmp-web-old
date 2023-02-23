@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EMPIRE PROJEKT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css?ver=2">
+    <link rel="stylesheet" href="css/law.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="
+    filter: drop-shadow(0px 0px 8px #185eb7);">
+        <a class="logo" href=""><img src="img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <a href="#">Информация</a>
+                    <div class="dropdown-content">
+                        <a href="..">Главная</a>
+                        <a href="faq">Частые вопросы</a>
+                        <a href="rules">Правила</a>
+                        <a href="law">Законы</a>
+                        <a href="commands">Команды</a>
+                        <a href="updates">Обновления</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Игра</a>
+                    <div class="dropdown-content">
+                        <a href="imgs">Картинки</a>
+                        <a href="create_item">Предметы</a>
+                        <a href="trading.php">Трейды</a>
+                    </div>
+                </li>
+
+
+                <li class="dropdown">
+                    <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                    <div class="dropdown-content">
+                        <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                        <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                    </div>
+                </li>
+                <li><a href="donate">Донат</a></li>
+                <li><a href="https://discord.gg/Gwukdr8">Дискорд</a></li>
+                <li><a href="https://vk.com/empireprojekt">ВК</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ;
+    ">
+
+
+        <p id="main-logo-name" style="
+        font-weight: 500;
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#185eb7;
+        padding:5px;
+        text-align: center;
+        margin-top: 30px;">EMPIRE PROJEKT
+
+
+            <img class="logo-image" style="height: 64px; width:64px;" src="img/ferris_logo.png">
+        </p>
+
+
+
+        <ul style="padding:30px;">
+            <li style="font-size: 25px; list-style: none;text-align: center;" class="li-laws">
+                <img class="logo-image" style="width: 25px; height: auto; display: inline" src="img/schlatt_coin.png">
+
+                <a style="
+                color: #F7C701;
+                text-decoration:none;
+                transition: all 0.3s ease 0s;" target="_blank"
+                    href="donate">Поддержать проект</a>
+                <img class="logo-image" style="width: 25px; height: auto; display: inline" src="img/schlatt_coin.png">
+            </li>
+
+            <li style="font-size: 25px; list-style: none;text-align: center;" class="li-laws">
+                <img class="logo-image" style="width: 25px; height: auto; display: inline" src="img/parchment.svg">
+                Обновления:
+                <img class="logo-image" style="width: 25px; height: auto; display: inline" src="img/parchment.svg"></li>
+        </ul>
+
+        <div class="collapsible_empty" style="text-align: center; background: #202733;border-radius: 5px;">
+            20.01.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлена поправка 3.4
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            За постройку красивых строений в Theia - будет выдано вознаграждение
+        </div>
+
+        <div class="collapsible_empty" style="text-align: center; background: #202733;border-radius: 5px;">
+            03.01.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлена новая карта Theia, которая не будет вайпаться. Рекомендуем строить постройки там. Карта доступна с Гражданина
+        </div>
+        <div class="collapsible_empty" style="text-align: center; background: #202733;border-radius: 5px;">
+            29.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Сервер переехал на другой адрес.
+        </div>
+        <div class="collapsible_empty" style="text-align: center; background: #202733;border-radius: 5px;">
+            22.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Обновлены приваты. Теперь новички не могут ломать и строить в регионах и другие изменения. Подробнее в апдейтах дискорд-канала
+        </div>
+
+        <div class="collapsible_empty" style="text-align: center; background: #202733;border-radius: 5px;">
+            12.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            На сайте теперь будет пишется дата апдейта
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Введена новаяпоправка 3.3 и поправка к поправке 3.3.1
+        </div>     
+
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Пофикшены баги на сайте
+        </div>
+        
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            09.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Ресурс-пак обновлён до новогодней версии.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Пофикшены проблемы с падением тпс
+        </div>
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            11.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Послевайповые донатные возможности у обычных игроков отключены
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлены новые донатные возможности
+        </div>
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            05.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Сделали вайп на сервере 04.12.2020 - экономика и всё такое пофикшено. Игрокам временно выдан доступ в донатный магазин.
+        </div>
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            04.12.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            На сервер теперь можно зайти не только с телефона, но и с любой версии начиная с 1.8! Играть вы будете на том же сервере, что и все игроки. Предметы, которых нет в старой версии, будут заменены на аналогичные из вашей версии.
+        </div>
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            30.11.2020
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            На сервер теперь можно зайти с телефона! Минимальная версия 1-16-100-60
+        </div>
+        <div class="collapsible_empty" style="text-align: center;background: #202733;border-radius: 5px;">
+            Дата утрачена...
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Обновлена страница с правилами.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Были добавлены сплаши. При выборе ранга - они будут анимированно показывать ваш новый ранг.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Изменены шизоидные надписи на странице обновлений.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Были добавлены сплаши. При выборе ранга - они будут анимированно показывать ваш новый ранг.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Были добавлены новые донатные привилегии на странице доната.
+        </div>
+
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Было добавлено ещё что-то, но я постоянно забываю обновлять эту страницу, так что уже не помню что было
+            добавлено, но это было что-то важное. Кстати, были пофикшены какие-то баги в плагине, уже не помню какие, но
+            они пофикшены. Найдены кстати ещё баги, но их фиксить уже не буду, они,кстати, крашат сервер.
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлне...Добавлен..Добавлен... ЩИИИТ!! ОГО! ЩИТ!
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлена страница с <a style="
+            color: rgb(24, 145, 192);
+            text-decoration:none;" target="_blank" href="faq">частыми вопросами</a>!</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлена поддержка смайликов. Когда вы будете писать смайл в дискорд - его будет видно в игре и наоборот!
+        </div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Пофикшены баги в новом плагине</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Эндер скрап теперь выпадает с маленькой вероятностью из эндерняка</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Убраны некоторые предметы</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Сервер перешел на самописный плагин вместо ItemsAdder</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлен закон 10.0 и поправки к нему</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлен закон 9.0 и поправки к нему</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Обновлена информация о ранге Инквизиции</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Пофикшены цены в магазине</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            В магазин /ds добавлен бетон</div>
+
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлен крафт дла магма-брони</div>
+
+
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлены спиннер и гитара</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Стоимость контракта смерти уменьше до 300к</div>
+        <div class="collapsible_empty">
+            <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/circle-blue.svg">
+            Добавлен крафт золотого щита</div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+.show-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+.show-btn.disabled{
+  pointer-events: none;
+}
+.modal{
+  position: fixed;
+  right: 0;
+  opacity: 0;
+  bottom: -100%;
+  width: 360px;
+  transition: bottom 0.4s, opacity 0.4s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+.modal.show{
+  bottom: 0;
+  opacity: 1;
+}
+.modal .top-content{
+  background: #202020;
+  width: 100%;
+}
+.top-content .left-text{
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+  user-select: none;
+}
+.top-content .close-icon{
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 23px;
+  color: silver;
+  cursor: pointer;
+}
+.close-icon:hover{
+  color: #b6b6b6;
+}
+.top-content .fa-camera-retro{
+  font-size: 80px;
+  color: #f2f2f2;
+}
+.modal .bottom-content{
+  background: #151515;
+  width: 100%;
+  padding: 15px 20px;
+}
+.bottom-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  color: #f2f2f2;
+}
+.bottom-content p{
+  font-size: 10px;
+  line-height: 27px;
+  color: #f2f2f2;
+}
+.bottom-content .close-btn{
+  padding: 15px 0;
+}
+.show-btn button,
+.close-btn button{
+  padding: 9px 13px;
+  background: #398fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: relative;
+  transform: translateX(100%);
+}
+.show-btn button{
+  padding: 12px 15px;
+}
+.show-btn button:hover,
+.close-btn button:hover{
+  background: #2d71ca;
+}

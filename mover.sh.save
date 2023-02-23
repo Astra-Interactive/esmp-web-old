@@ -1,0 +1,10 @@
+for entry in "/usr/games/minecraft/server/plugins/ImageMaps/images"/*
+do
+	cp "$entry" "/var/www/html/images"
+done
+
+for entry in "/var/www/html/images"/*
+do
+	echo "$(basename "$entry")" >> 
+data
+done

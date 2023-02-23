@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Команды</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/law.css">
+    <link rel="stylesheet" href="css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header style="
+    filter: drop-shadow(0px 0px 8px #18b7aa);">
+        <a class="logo" href=".."><img src="img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <a href="#">Информация</a>
+                    <div class="dropdown-content">
+                        <a href="..">Главная</a>
+                        <a href="faq">Частые вопросы</a>
+                        <a href="rules">Правила</a>
+                        <a href="law">Законы</a>
+                        <a href="commands">Команды</a>
+                        <a href="updates">Обновления</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Игра</a>
+                    <div class="dropdown-content">
+                        <a href="imgs">Картинки</a>
+                        <a href="create_item">Предметы</a>
+                        <a href="trading.php">Трейды</a>
+                    </div>
+                </li>
+
+                <li><a href="donate">Донат</a></li>
+                <li><a href="https://discord.gg/Gwukdr8">Дискорд</a></li>
+                <li><a href="https://vk.com/empireprojekt">ВК</a></li>
+
+                <li class="dropdown">
+                    <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                    <div class="dropdown-content">
+                        <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                        <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ">
+        <p style="font-family: 'Russo One', sans-serif;
+font-weight: 500;
+font-size: 30px;
+color: #edf0f1;
+text-decoration: none;
+background-color:#18b7aa;
+padding:5px;
+text-align: center;
+margin-top: 30px;
+">Команды сервера EMPIRE PROJEKT:</p>
+
+
+        <button class="collapsible">Essentials</button>
+        <div class="content">
+            <p style="padding:15px;">Доступны стандартные команды.<br>
+                На сервере есть арена, где после смерти остаются вещи и опыт /warp ARENA<br>
+                /warps-посмотреть порталы<br>
+                /repair-починить предмет в руке - после этого также введите /emrepair<br>
+                /menu - открыть меню сервера<br>
+                Их цены можно посмотреть в /einfo prices</p>
+        </div>
+
+        <button class="collapsible">Dead Souls</button>
+        <div class="content">
+            <p style="padding:15px;">На месте вашей смерти появляется дым, который будет там до тех пор, пока его
+                кто-нибудь не
+                поднимет.(Чтобы вещи не исчезали после смерти). <br>
+                /souls чтобы увидеть ближайшие места смерти.</p>
+        </div>
+
+        <button class="collapsible">Меню сервера</button>
+        <div class="content">
+            <p style="padding:15px;">Меню сервера,если вам лень писать команды по отдельности. /menu.</p>
+        </div>
+
+        <button class="collapsible">ChestSort</button>
+        <div class="content">
+            <p style="padding:15px;">Сортирует вещи в вашем инвентаре и сундуках на среднюю кнопку мыши.</p>
+        </div>
+
+        <button class="collapsible">Colored Anvils и Colored Signs</button>
+        <div class="content">
+            <p style="padding:15px;">Позволяет делать цветные надписи на табличках и переименовывать предметы цветным
+                текстом. Информация по цвету /einfo colors.</p>
+        </div>
+
+        <button class="collapsible">DynamicShop</button>
+        <div class="content">
+            <p style="padding:15px;">Магазин, где вы можете купить все,кроме зелий и зачарований. <br>
+                Команда /shop /ds qsell или через меню сервера.<br>
+                Магазин доступен только на спавне, где он и расположен.</p>
+        </div>
+
+        <button class="collapsible">AuctionHouse</button>
+        <div class="content">
+            <p style="padding:15px;">Позволяет продавать свои предметы на общем рынке. <br>
+                Предметы будут там 7 дней, потом пропадут. Можно их убирать.<br>
+                /ah sell [цена]- продать  предмет в руке<br>
+                /ah menu - открыть рынок. Недоступно в энде и аду.</p>
+        </div>
+
+        <button class="collapsible">Gsit</button>
+        <div class="content">
+            <p style="padding:15px;">Теперь можно садиться на ступеньки и все такое. Можно сесть/лечь на землю
+                использовав /gsit /glay</p>
+        </div>
+
+        <button class="collapsible">ImageMap</button>
+        <div class="content">
+            <p style="padding:15px;">На сервере можно создавать кастомные картинки. Можете открыть ссылку Картинки на
+                сайте. <small style="font-size:10px;">[Картинки с непотребствами и непонятными названиями будут
+                    удалены!]</small>
+                <br>/imagemap download <Название> [URL]
+                    <br> /imagemap place <Название> true true 1x1. <small style="font-size:10px;">[Например: /imagemap place
+                            mapName true true 1x1]</small> </p>
+        </div>
+
+        <button class="collapsible">Кланы</button>
+        <div class="content">
+            <p style="padding:15px;">
+                На сервере можно создавать свои кланы.<br>
+                /clan modtag НовоеНазвание - изменить цвет в клане. /einfo colors<br>
+                /clan и /clan help - вам в помощь
+        </div>
+
+        <button class="collapsible">Предметы и ресурс-пак</button>
+        <div class="content">
+            <p style="padding:15px;">На сервере есть кастомные предметы /emgui. Чтобы видеть их-необходим
+                <a id="resource_pack_version_comm" style="
+                color: #1881b7;
+                text-decoration:none;
+                font-family: 'Russo One', sans-serif;
+                transition: all 0.3s ease 0s;" href="files/FreeProjektPack.zip">ресурс-пак 1.1</a></p>
+        </div>
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

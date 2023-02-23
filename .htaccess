@@ -1,0 +1,10 @@
+
+ErrorDocument 404 http://empireprojekt.ru/404
+ErrorDocument 500 http://empireprojekt.ru/500
+ErrorDocument 403 http://empireprojekt.ru/403
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.html [L]

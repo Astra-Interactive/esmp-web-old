@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="../img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Донат</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css?ver=2">
+    <link rel="stylesheet" href="../css/law.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="../css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="
+    filter: drop-shadow(0px 0px 8px #1881b7);">
+            <a class="logo" href=".."><img src="../img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li class="dropdown">
+                        <a href="#">Information</a>
+                        <div class="dropdown-content">
+                            <a href="index">Main</a>
+                            <a href="faq">FAQ</a>
+                                <a href="rules">Rules</a>
+                                <a href="law">Laws</a>
+                                <a href="commands">Commands</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Server</a>
+                        <div class="dropdown-content">
+                            <a href="../imgs">ImageMaps</a>
+                            <a href="create_item">Items</a>
+                            <a href="../trading.php">Trading(Disabled)</a>
+                        </div>
+                    </li>
+
+                    <li><a href="donate">Donate</a></li>
+                    <li><a href="https://discord.gg/Gwukdr8">Discord</a></li>
+                    <li><a href="https://vk.com/empireprojekt">VK</a></li>
+
+                    <li class="dropdown">
+                        <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                        <div class="dropdown-content">
+                            <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                            <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ;
+    ">
+
+
+        <p id="main-logo-name" style="font-family: 'Russo One', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#185eb7;
+        padding:5px;
+        text-align: center;
+        margin-top: 30px;">EMPIRE PROJEKT
+
+
+            <img class="logo-image" style="height: 64px; width:64px;" src="../img/ferris_logo.png">
+        </p>
+
+
+
+        <script>
+            var url = "https://api.minetools.eu/ping/play.empireprojekt.ru";
+            $.getJSON(url, function (r) {
+                if (r.error) {
+                    $('#rest').html('Сервер выключен');
+                    $('#coll_players').css('background-color', '#370000')
+                    return false;
+                }
+                var plStr = '<br>Сейчас играют: <br>'
+                console.log(r.players.sample);
+                r.players.sample.forEach(el => plStr += el.name + '; ');
+
+
+                $('#players_online').html('Сейчас на сервере играет ' + r.players.online + '/' + r.players.max + ' человек на версии ' + r.version.name + '\n' + plStr);
+                $('#coll_players').css('background-color', '#00370e')
+            });
+        </script>
+
+
+
+
+        <button id="coll_players" class="collapsible_empty"
+            style="text-align: center;padding: 15px;background-color:rgb(91, 69, 0);">
+            <span id="players_online" data-playercounter-ip="51.178.221.76">
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="../img/ferris_logo.png">
+                Загрузка...
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="../img/ferris_logo.png">
+
+            </span>
+        </button>
+        <ul style="padding:15px;">
+            <li style="font-size: 20px; list-style: none;text-align: center;" class="li-laws">
+                <img class="logo-image" style="width: 20px; height: auto; display: inline" src="../img/schlatt_coin.png">
+                <a style="
+                color: #F7C701;
+                text-decoration:none;
+                font-family: 'Russo One', sans-serif;
+                transition: all 0.3s ease 0s;" target="_blank" href="https://www.vk.com/app6471849_-200439587">Support
+                    the project on VKontakte</a>
+                <img class="logo-image" style="width: 20px; height: auto; display: inline"
+                    src="../img/schlatt_coin.png"><br>
+                Don't forget to write your game nickname!
+            </li>
+        </ul>
+        <ul style="padding:30px;">
+            <li style="font-size: 20px; list-style: none;" class="li-laws">
+                Unban / remove the intruder's role: 1 USD<br><br>
+
+                Donate is valid for 1 month from the date of issue<br><br>
+
+                For donate 0.5 USD: <br>
+                Monthly prefix at your discretion. <br>
+                The ability to create a clan <br>
+                The ability to create a region <br>
+                Option to sort inventory <br>
+                <br>
+                For a donation from 1 USD you will receive: <br>
+                Monthly prefix at your discretion, increased number of sethoms (up to 5) and regions (up to 2). <br>
+                Access to a special store, which contains items that are not in the main store. <br>
+                The ability to change the weather. / menu -> world management. <br>
+                Sell and buy experience in / menu -> Experience. <br>
+                Command / rest or in / menu -> Rest. <br> <br>
+
+                For a donation from 2 USD: <br>
+                All of the above. <br>
+                Experience will not be lost after death. <br>
+                Access to a new monthly resource kit. <br>
+                Up to 8 new sethoms and up to 3 regions. <br>
+                Access to the command / heal for 10k in-game currency. <br>
+                Access to the command / enderchest, / anvil, / workbench, / cartographytable, / grindstone. <br>
+                Access to the / back command for 10k in-game currency. <br>
+                Accessing the / hat command <br>
+                Access to command / itemname, / itemlore - change item name and description <br>
+                The ability to write in colored letters in the chat. <br>
+                Ability to use the / shop and / ah commands in any world (End, Hell, Normal, not only on the spawn). <br>
+
+
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

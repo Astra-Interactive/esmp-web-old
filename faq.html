@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Частые вопросы</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/main.css?ver=2">
+    <link rel="stylesheet" href="css/law.css">
+    <link rel="stylesheet" href="css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="
+    filter: drop-shadow(0px 0px 8px #186ab7);">
+        <a class="logo" href=".."><img src="img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <a href="#">Информация</a>
+                    <div class="dropdown-content">
+                        <a href="..">Главная</a>
+                        <a href="faq">Частые вопросы</a>
+                        <a href="rules">Правила</a>
+                        <a href="law">Законы</a>
+                        <a href="commands">Команды</a>
+                        <a href="updates">Обновления</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Игра</a>
+                    <div class="dropdown-content">
+                        <a href="imgs">Картинки</a>
+                        <a href="create_item">Предметы</a>
+                        <a href="trading.php">Трейды</a>
+                    </div>
+                </li>
+
+                <li><a href="donate">Донат</a></li>
+                <li><a href="https://discord.gg/Gwukdr8">Дискорд</a></li>
+                <li><a href="https://vk.com/empireprojekt">ВК</a></li>
+
+                <li class="dropdown">
+                    <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                    <div class="dropdown-content">
+                        <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                        <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ">
+        <p style="font-family: 'Russo One', sans-serif;
+font-weight: 500;
+font-size: 30px;
+color: #edf0f1;
+text-decoration: none;
+background-color:#186ab7;
+padding:5px;
+text-align: center;
+margin-top: 30px;
+">Частые вопросы Empire Projekt:<br>
+            <a style="
+                color: rgb(192, 181, 24);
+                text-decoration:none;" href="#">Раздел дополняется!</a>
+        </p><button class="collapsible">Что с донатом?</button>
+        <div class="content">
+            <p style="padding:15px;"><a style="
+                color: rgb(24, 145, 192);
+                text-decoration:none;" target="_blank" href="donate">Донат</a> появился в самом начале декабря. За
+                донат вы можете разбанить себя или получить некоторые преимущества</p>
+        </div>
+
+
+        <button class="collapsible">Какой размер карты?</button>
+        <div class="content">
+            <p style="padding:15px;">Размер карты 20к на 20к блоков. Радиус-10к. Ад, казалось бы,должен быть в 8 раз
+                меньше, но нет, ад 10к на 10к. Энд 20к на 20к.<br>
+                Есть ещё отдельная карта для строитльества Theia для тех, кто часто играет.
+            
+            </p>
+        </div>
+
+        <button class="collapsible">Есть приват?</button>
+        <div class="content">
+            <p style="padding:15px;">Относительно. Создавать приваты можно с резидента. Ломать и строить в чужих
+                приватах - с гражданина. Приват спасёт вас от лавакастов и т.д. Игроки, которые часто играют на сервере
+                - могут ломать и ставить блоки в любых приватах. У некотрых есть даже доступ к привату спавна.
+
+            </p>
+        </div>
+
+        <button class="collapsible">Есть античит?</button>
+        <div class="content">
+            <p style="padding:15px;">Есть. За использование читов кикать не будет, но пользоваться вы ими не сможете. Если сможете - получите предупреждение и сядите в тюрьму.
+            </p>
+        </div>
+
+        <button class="collapsible">Но в мониторинге есть тэг Гриф!</button>
+        <div class="content">
+            <p style="padding:15px;">Всё верно. Вы можете гриферить. Однако вас будут потом преследовать.
+            </p>
+        </div>
+        <button class="collapsible">Как заработать денег?</button>
+        <div class="content">
+            <p style="padding:15px;">На спавне есть скупщик хлама. Продавайте ему вещи.
+            </p>
+        </div>
+        <button class="collapsible">А если меня ограбили?</button>
+        <div class="content">
+            <p style="padding:15px;">Это ужасно! Можете перейти в <a style="
+                color: rgb(24, 145, 192);
+                text-decoration:none;" target="_blank" href="law">законы</a> и посмотреть, что конкретно сделал
+                нарушитель и каково его наказание!<br>
+                Не забывайте, что сервер с РП-элементами и на нём есть Стражи,Ораклы и Инквизиторы, которые обязаны
+                помогать гражданам и резидентам! По сути эти роли - альтернатива полиции, следователя и судьи
+                соответственно.
+            </p>
+        </div>
+
+        <button class="collapsible">Зачем ресурс-пак?</button>
+        <div class="content">
+            <p style="padding:15px;">На сервере стоит плагин на добавление кастомных предметов.<br>Кастомные мечи,
+                кастомная руда и броня, контракты на убийства и на фермы, новая еда и мемные предметы. <br>Также
+                добавлены новые музыкальные пластинки.<br> Кроме этого, есть интеграция с эмодзи-дискорда. Вы будете их
+                видеть в игре!.</p>
+        </div>
+
+        <button class="collapsible">Чем заниматься на сервере?</button>
+        <div class="content">
+            <p style="padding:15px;">Строить?<br> Улучшать предметы?.<br>
+                Крафтить новые предметы?<br>
+                Гриферить людей, после того, как вы стали самым сильным!<br>
+            </p>
+        </div>
+        <button class="collapsible">Что за кастомные предметы?</button>
+        <div class="content">
+            <p style="padding:15px;">Для них нужен ресурс-пак<br>
+                Монета Шлатта, Гитара, Новая броня, Мечи и т.д<br>
+                Всё это можете увидеть в /emgui
+            </p>
+        </div>
+        <button class="collapsible">Как улучшать предметы?</button>
+        <div class="content">
+            <p style="padding:15px;">Улучшать можно только предметы из /emgui<br>
+                Мечи, Броню и Щиты<br>
+                Введите /emgui найдите Апгрейды. Там будут ресурсы которые можно использовать при улучшении.<br>
+                Если в /emgui нажмете на ресурс - внизу будет троеточие. Там вы увидите, на что влияет предмет при улучшении.<br>
+                Чтобы улучшить предмет - поставьте  Меч,Щит или Броню в левый слот, а ресурс во второй.<br>
+                Есть ресурсы, которые уменьшают стоимость апгрейда. Например Пыль Времени.
+            </p>
+        </div>
+        <button class="collapsible">Что ещё за роли и зачем они?</button>
+        <div class="content">
+            <p style="padding:15px;">
+                Есть несколько основных: <span style="color: #bd931e;">Отребье</span> |
+                <span style="color: #9dbd1e;">Плебей</span> |
+                <span style="color: #52c211;">Гражданин</span> |
+                <span style="color: #11c240;">Резидент</span><br>
+                Изначально каждый новый игрок отребье. С повышение часов игры вы можете выбрать новую роль в /ranks<br>
+                <span style="color: #bd931e;">Отребье</span> и <span style="color: #9dbd1e;">Плебей</span> не
+                могут,например, создавать кланы, скачивать изображения с /imagemap и несколько других вещей<br>
+                Это сделано для того, чтобы новопришедшие игроки, которые не собираются играть, не захламляли сервер
+                бессмысленными кланами и картинками.<br>
+                Есть еще другие роли. Подробнее смотртие в конце страницы <a style="
+                color: rgb(24, 145, 192);
+                text-decoration:none;" target="_blank" href="law">законов</a> <br>
+
+                Есть особая роль <span style="color:rgb(206, 29, 38);">Нарушитель</span>, которая даётся за
+                множественное нарушение <span style="color:rgb(206, 29, 38);">ПРАВИЛ</span>, не <span
+                    style="color:#1881b7;">ЗАКОНОВ</span>. Эта роль - легкая версия бана. Вы теряете возможность
+                вступать в кланы, делать картинки, покупать и продавать вещи в магазине, пользоваться /home, и т.д
+            </p>
+        </div>
+        <button class="collapsible">Как мне получить роль?</button>
+        <div class="content">
+            <p style="padding:15px;">
+                Для того чтобы получить <span style="color:rgb(29, 190, 206);">Инквизитора</span> нужно заслужить очень
+                сильное доверия не только игроков, но и администрации. Это самая ответсвенная роль, которая может садить
+                людей в тюрьму.<br>
+                Чтобы получить <span style="color:rgb(1, 212, 133);">Стража</span> или <span
+                    style="color:rgb(1, 143, 212);">Оракла</span> - достаточно просто адекватно себя вести, и, опять
+                же,заслужить доверие игроков<br>
+                Остальные роли можно получить в /ranks
+            </p>
+        </div>
+        <button class="collapsible">Что с вайпами?</button>
+        <div class="content">
+            <p style="padding:15px;">Ближайший планируется с выходом 1.17<br>
+                Вайпы энда и ада - по желанию игроков.<br>
+                Если собирается вайп - вам об этом сообщат.<br>
+                Вы можете попросить администрацию сохранить свои постройки, после чего они будут выложены на сайт в
+                соответствующем разделе.<br>
+                После вайпа старые миры будут ещё храниться какое-то время на диске администрации. Если вы что-то забыли
+                - не всё ещё потеряно.<br>
+            </p>
+        </div>
+        <button class="collapsible">Зачем дискорд?</button>
+        <div class="content">
+            <p style="padding:15px;">Если вы не в игре, вы всё равно можете читать игровой чат в канале майн-чат.<br>
+                Есть каналы для предложений, каналы с помощью при нарушении законов закон-и-порядок.
+            </p>
+        </div>
+        <button class="collapsible">Я что-то видел про голосовй чат?</button>
+        <div class="content">
+            <p style="padding:15px;">Да, действительно, на сервере есть голосовой чат! Им, правда, никто не
+                пользуется...<br>
+                Для того чтобы пользоваться им, необходимо в игре быть хотя бы гражданином или резидентом. Это сделано
+                для того, чтобы избежать всяких недоброжелателей, которые бы портили процесс игры.<br>
+                1. После повышения до гражданина, в настройках конфиденциальности разрешите сообщения участникам
+                сервера.<br>
+                2. В игре пропишите /discord link<br>
+                3. Отправьте цифры, которые увидите в чате нашему боту Empire BOT#1162<br>
+                4. Теперь ваш аккаунт привязан к дискорду! Можете зайти в раздел МАЙН-ВОЙС в голосовй канал Лобби.<br>
+                Когда вы будете близко к другому игроку, у которого тоже привязан аккаунт, и который тоже находится в
+                Лобби, вы окажетесь в одном голосовм канале(новом) и сможете говорить друг с другом.
+            </p>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

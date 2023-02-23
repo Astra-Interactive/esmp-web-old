@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Карта</title>
+</head>
+<meta http-equiv="Refresh" content="0; url='http://45.93.200.10:18576'" />
+
+<!--
+<iframe src="http://play.empireprojekt.ru:25585/#" style="height: 100%;width: 100%; border: none; outline: none;display: block;" title="Empire Map"></iframe> 
+-->
+<!--
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Карта</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css?ver=2">
+    <link rel="stylesheet" href="css/law.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="
+    box-shadow: 0px 0px 8px #185eb7;
+    ">
+        <a class="logo" href=""><img src="img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <a href="#">Информация</a>
+                    <div class="dropdown-content">
+                        <a href="..">Главная</a>
+                        <a href="faq">Частые вопросы</a>
+                        <a href="rules">Правила</a>
+                        <a href="law">Законы</a>
+                        <a href="commands">Команды</a>
+                        <a href="updates">Обновления</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Игра</a>
+                    <div class="dropdown-content">
+                        <a href="imgs">Картинки</a>
+                        <a href="create_item">Предметы</a>
+                        <a href="trading.php">Трейды</a>
+                    </div>
+                </li>
+
+                <li><a href="donate">Донат</a></li>
+                <li><a href="https://discord.gg/Gwukdr8">Дискорд</a></li>
+                <li><a href="https://vk.com/empireprojekt">ВК</a></li>
+
+                <li class="dropdown">
+                    <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                    <div class="dropdown-content">
+                        <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                        <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ;
+    ">
+
+
+        <p id="main-logo-name" style="font-family: 'Russo One', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#185eb7;
+        padding:5px;
+        text-align: center;
+        margin-top: 30px;">EMPIRE PROJEKT
+
+
+            <img class="logo-image" style="height: 64px; width:64px;" src="img/ferris_logo.png">
+        </p>
+
+
+
+        <script>
+            var url = "https://api.minetools.eu/ping/play.empireprojekt.ru";
+            $.getJSON(url, function (r) {
+                if (r.error) {
+                    $('#rest').html('Сервер выключен');
+                    $('#coll_players').css('background-color', '#370000')
+                    return false;
+                }
+                var plStr = '<br>Сейчас играют: <br>'
+                console.log(r.players.sample);
+                r.players.sample.forEach(el => plStr += el.name + '; ');
+
+
+                $('#players_online').html('Сейчас на сервере играет ' + r.players.online + '/' + r.players.max + ' человек на версии ' + r.version.name + '\n' + plStr);
+                $('#coll_players').css('background-color', '#00370e')
+            });
+        </script>
+
+
+
+
+        <button id="coll_players" class="collapsible_empty"
+            style="text-align: center;padding: 15px;background-color:rgb(91, 69, 0);">
+            <span id="players_online" data-playercounter-ip="play.empireprojekt.ru">
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/ferris_logo.png">
+                Загрузка...
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/ferris_logo.png">
+
+            </span>
+        </button>
+        <ul style="padding:15px;">
+            <li style="font-size: 20px; list-style: none;text-align: center;" class="li-laws">
+                <img class="logo-image" style="width: 20px; height: auto; display: inline" src="img/schlatt_coin.png">
+                <a style="
+                color: #F7C701;
+                text-decoration:none;
+                font-family: 'Russo One', sans-serif;
+                transition: all 0.3s ease 0s;" target="_blank"
+                    href="https://www.vk.com/app6471849_-200439587">Поддержать проект во ВКонтакте</a>
+                <img class="logo-image" style="width: 20px; height: auto; display: inline"
+                    src="img/schlatt_coin.png"><br>
+                Не забудьте написать игровой ник!
+            </li>
+        </ul>
+
+        <ul style="padding:30px;">
+            <li style="font-size: 20px; list-style: none; text-align:center;" class="li-laws">
+                Игровую карту пришлось отключить..<br>
+                Она вернется, когда мы сменим хостинг!<br>
+
+
+
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+-->

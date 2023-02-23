@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #202020;
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+  }
+  
+  nav {
+    order: 1;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+	  list-style:none;
+    display: flex;
+    font-size: 16px;
+  }
+  
+  .nav__links li {
+    padding: 0px 10px;
+  }
+  
+  .nav__links li:nth-child(1) {
+    padding: 0 10px 0 0;
+  }
+  
+  .nav__links li a,.logo {
+    text-decoration: none;
+    position: relative;
+    padding: 5px 5px;  
+
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a::before,.logo::before {
+    
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover::after,.logo:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .nav__links li a::after,.logo::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#F7C701;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover {
+    color:#dbb107;
+  }
+  
+  .logo:hover {
+      scale: 1.1;
+      filter: drop-shadow(0px 0px 1px rgba(206, 173, 28, 0.5));
+    }
+    .logo {
+      transition: all 0.3s ease 0s;
+      scale: 1.0;
+    }
+  .cta {
+    order: 2;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  
+
+.dropdown {
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-top: 5px;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #151515;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content:hover{
+  opacity: 1;
+}
+.dropdown-content a:hover {
+  background-color: #252525}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  display: block;
+}

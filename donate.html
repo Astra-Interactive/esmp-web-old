@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="img/ferris_logo.png" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Донат</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css?ver=2">
+    <link rel="stylesheet" href="css/law.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/header.css?ver=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="
+    box-shadow: 0px 0px 8px #185eb7;
+    ">
+        <a class="logo" href=""><img src="img/BANER_TRANS_FERRIS.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <a href="#">Информация</a>
+                    <div class="dropdown-content">
+                        <a href="..">Главная</a>
+                        <a href="faq">Частые вопросы</a>
+                        <a href="rules">Правила</a>
+                        <a href="law">Законы</a>
+                        <a href="commands">Команды</a>
+                        <a href="updates">Обновления</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Игра</a>
+                    <div class="dropdown-content">
+                        <a href="imgs">Картинки</a>
+                        <a href="create_item">Предметы</a>
+                        <a href="trading.php">Трейды</a>
+                    </div>
+                </li>
+
+                <li><a href="donate">Донат</a></li>
+                <li><a href="https://discord.gg/Gwukdr8">Дискорд</a></li>
+                <li><a href="https://vk.com/empireprojekt">ВК</a></li>
+
+                <li class="dropdown">
+                    <a id="resource_pack_version" href="#">Ресур-пак 1.1</a>
+                    <div class="dropdown-content">
+                        <a href="files/EmpireProjektPack.zip">Полная версия</a>
+                        <a href="files/EmpireProjektPack_Light.zip">Легкая версия(без звуков)</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div style="
+    width: 95%;
+    background-color:#181818;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    ;
+    ">
+
+
+        <p id="main-logo-name" style="font-family: 'Russo One', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#185eb7;
+        padding:5px;
+        text-align: center;
+        margin-top: 30px;">EMPIRE PROJEKT
+
+
+            <img class="logo-image" style="height: 64px; width:64px;" src="img/ferris_logo.png">
+        </p>
+
+
+
+        <script>
+            var url = "https://api.minetools.eu/ping/45.93.200.10/25576";
+            $.getJSON(url, function (r) {
+                if (r.error) {
+                    $('#rest').html('Сервер выключен');
+                    $('#coll_players').css('background-color', '#370000')
+                    return false;
+                }
+                var plStr = '<br>Сейчас играют: <br>'
+                console.log(r.players.sample);
+                r.players.sample.forEach(el => plStr += el.name + '; ');
+
+
+                $('#players_online').html('Сейчас на сервере играет ' + r.players.online + '/' + r.players.max + ' человек на версии ' + r.version.name + '\n' + plStr);
+                $('#coll_players').css('background-color', '#00370e')
+            });
+        </script>
+
+
+
+
+        <button id="coll_players" class="collapsible_empty"
+            style="text-align: center;padding: 15px;background-color:rgb(91, 69, 0);">
+            <span id="players_online" data-playercounter-ip="play.empireprojekt.ru">
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/ferris_logo.png">
+                Загрузка...
+                <img class="logo-image" style="width: 15px; height: auto; display: inline" src="img/ferris_logo.png">
+
+            </span>
+        </button>
+        <ul style="padding:15px;">
+            <li style="font-size: 20px; list-style: none;text-align: center;" class="li-laws">
+                <!--<img class="logo-image" style="width: 20px; height: auto; display: inline" src="img/schlatt_coin.png">
+                
+                <a style="
+                color: #F7C701;
+                text-decoration:none;
+                font-family: 'Russo One', sans-serif;
+                transition: all 0.3s ease 0s;" target="_blank" href="https://empireprojekt.craft-donate.ru">Нажмите
+                    чтобы купить донат</a>
+                <img class="logo-image" style="width: 20px; height: auto; display: inline"
+                    src="img/schlatt_coin.png"><br>
+                Не забудьте написать игровой ник!
+                -->
+
+                <div id="content_magazine" style="width:auto; background:#202020;"></div>
+                <script src="https://craft-hosting.ru/js/jquery-1.10.2.js"></script>
+   
+                <script>
+                    var content = document.getElementById("content_magazine");
+                    var domain = "empireprojekt.craft-donate.ru";
+                    var act = "iframe";
+                    $.get("https://craft-hosting.ru/api/api_donate.php", { act: act, domain: domain }, function (data) {
+                        content.innerHTML = data;
+                    });
+                    function pays(id) {
+                        var playerd = document.getElementById("playerd").value;
+                        var tovar = document.getElementById("tovard").value;
+                        var promo = document.getElementById("promo").value;
+                        if (playerd.length > 0) {
+                            window.location = "http://" + domain + "/pay.php?id=" + id + "&player=" + playerd + "&tovar=" + tovar + "&promo=" + promo;
+                        } else { alert("Введите свой игровой ник!"); }
+                    }
+                    $(".b1").css('background', '#202020');
+                </script>
+
+
+
+
+            </li>
+        </ul>
+
+        <button class="collapsible">50 рублей</button>
+        <div class="content">
+            <p style="padding:15px;">Возможность менять префикс на своё усмотрение.<br>
+                Апгрейд до возможностей Резидента<br>
+                Возможность сортировать инвентарь<br>
+            </p>
+        </div>
+
+        <button class="collapsible">100 рублей</button>
+        <div class="content">
+            <p style="padding:15px;">Всё вышеперечисленное.<br>
+                увеличенное количество sethom'ов(до 5),регионов(до 2) и аукционов (до 6).<br>
+                Доступ в особый магазин, в котором присутсвуют предметы, отсутствующие в основном магазине.<br>
+                Возможность изменять погоду. /menu -> управление миром.<br>
+                Продавать и покупать опыт в /menu -> Опыт.<br>
+                Команда /rest или в /menu -> Отдых.<br><br>
+            </p>
+        </div>
+        <button class="collapsible">150 рублей</button>
+        <div class="content">
+            <p style="padding:15px;">Всё вышеперечисленное.<br>
+                Не будет пропадать опыт после смерти.<br>
+                Доступ к новому ежемесячному киту с ресурсами.<br>
+                До 8 новых sethom'ов до 3 регионов и 16 аукционов.<br>
+                Доступ к команде /heal.<br>
+                Доступ к команде /enderchest,/anvil,/workbench,/cartographytable,/grindstone.<br>
+                Доступ к команде /back за 10к внутриигровой валюты.<br>
+                Доступ к команде /hat.<br>
+                Доступ к команде /itemname,/itemlore - изменение имени и описания предмета.<br>
+                Возможность писать цветными буквами в чате.<br>
+                Возможность пользоваться аукционом и магазином в любой точке любого мира.<br>
+            </p>
+        </div>
+
+        <ul style="padding:30px;">
+            <li style="font-size: 20px; list-style: none;" class="li-laws">
+                Разбан: 100 рублей<br>
+                Разбан не спасает от нового бана<br>
+                Донат действует 1 месяц с момента его выдачи<br><br>
+
+
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
